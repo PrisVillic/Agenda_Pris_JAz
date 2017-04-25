@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="64dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity"
+    android:id="@+id/main"
+    tools:ignore="RtlHardcoded,RtlSymmetry"
+    android:background="#AAC1E2">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grid_main"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="102dp"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="106dp"
+            android:background="@mipmap/adduser"
+            android:id="@+id/agregarbtn"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:onClick="onClick"
+            />
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            android:background="@mipmap/userdelete"
+            android:id="@+id/eliminar_btn"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:onClick="onEliminar"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="116dp"
+            android:background="@mipmap/buscar"
+            android:id="@+id/listarbtn"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:onClick="onListar"
+            />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="112dp"
+            android:background="@mipmap/updateuser"
+            android:id="@+id/modificar_btn"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:onClick="premodificar"
+            tools:ignore="HardcodedText" />
+    </GridLayout>
+</RelativeLayout>
